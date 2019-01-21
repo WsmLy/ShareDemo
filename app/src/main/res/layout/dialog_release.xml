@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:id="@+id/context"
+    android:background="@android:color/transparent">
+
+    <teotw.com.shareapplication.ui.widget.ShareView2
+        android:id="@+id/share_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/cancel_title"
+        android:layout_marginBottom="50dp"
+        android:background="@color/background_color" />
+
+    <TextView
+        android:id="@+id/share_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/share_view"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/background_color"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="15dp"
+        android:text="分享到"
+        android:textColor="@color/txt_grey"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:src="@mipmap/other_icon07"
+        android:background="@color/white"
+        android:layout_alignBottom="@+id/share_title"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:id="@+id/success_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/share_title"
+        android:layout_marginBottom="46dp"
+        android:paddingBottom="5dp"
+        android:background="@color/white"
+        android:text="发布成功"
+        android:textColor="@color/color_main"
+        android:textSize="18sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/success_title"
+        android:layout_marginBottom="24dp"
+        android:background="@color/white">
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/release_icon03" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/cancel_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#ff333333"
+        android:textSize="15sp" />
+</RelativeLayout>
